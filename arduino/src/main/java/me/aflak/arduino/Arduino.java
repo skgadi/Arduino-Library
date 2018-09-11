@@ -188,7 +188,6 @@ public class Arduino implements UsbSerialInterface.UsbReadCallback {
 
     private boolean hasId(int id) {
         Log.i(getClass().getSimpleName(), "Vendor id : "+id);
-        Log.i(getClass().getSimpleName(), "Version : Suresh");
         for(int vendorId : vendorIds){
             if(vendorId==id){
                 return true;
