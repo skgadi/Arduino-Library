@@ -4,7 +4,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'arduino'
 
-    publishedGroupId = 'me.aflak.libraries'
+    publishedGroupId = 'com.skgadi.library'
     libraryName = 'Arduino'
     artifact = 'arduino'
 
@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/omaflak/Arduino'
     gitUrl = 'https://github.com/omaflak/Arduino.git'
 
-    libraryVersion = '1.4.3'
+    libraryVersion = '1.1.1'
 
     developerId = 'omaflak'
     developerName = 'Omar Aflak'
@@ -31,7 +31,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 7
-        versionName "1.4.3"
+        versionName "1.4.4"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -52,7 +52,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
 
-    compile 'com.github.felHR85:UsbSerial:4.5'
+    implementation 'com.github.felHR85:UsbSerial:4.5'
 }
 
 apply from: 'https://raw.githubusercontent.com/omaflak/Bintray/master/install.gradle'
